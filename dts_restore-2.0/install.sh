@@ -5,7 +5,7 @@ for cs in $ps_output; do
 done;
 if [[ -n "$BASH_SOURCE" ]]; then
   SCRIPT="${BASH_SOURCE[0]}"
-elif [[ "$0" != "$CURRENT_SHELL" ]] && [[ "$0" != "-$CURRENT_SHELL" ]]; then
+elif [[ "$0" != "$CURRENT_SHELL" && "$0" != "-$CURRENT_SHELL" ]]; then
   SCRIPT="$0"
 elif [[ -n "$LAST_COMMAND" ]]; then
   SCRIPT="$LAST_COMMAND"
