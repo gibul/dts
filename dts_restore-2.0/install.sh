@@ -1,10 +1,3 @@
-#!/usr/bin/env sh
-# DTS playback restoration script for LG OLED CX
-# Copyright (c) 2022-2025 Pete Batard <pete@akeo.ie>
-# See https://github.com/RootMyTV/RootMyTV.github.io/issues/72#issuecomment-1343204028
-
-# Get the path where the script is located.
-# Adapted from https://github.com/rmyorston/busybox-w32/issues/154
 LAST_COMMAND="$_"  # IMPORTANT: This must be the first command in the script
 ps_output="$(ps -o pid,comm | grep -Fw $$)"
 for cs in $ps_output; do
